@@ -9,10 +9,6 @@ commands:
         permission: moddutydutch.modduty
         permission-message: You don't have <permission>
 permissions:
-    moddutydutch.*:
-        description: gives access to all modduty commands
-        children:
-            modonduty.modduty: true
     moddutydutch.modduty:
         description: Allows use of the command /modduty
-        default: true    
+        default: true 
