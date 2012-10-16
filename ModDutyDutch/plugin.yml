@@ -1,18 +1,18 @@
 name: ModDutyDutch
-main: com.github.cmptrzd1592.ModDuty.ModDutyDutch
+main: com.github.cmptrzd1592.ModDutyDutch.ModDutyDutch
 version: 1.0
 
 commands:
     modduty:
         description: announces that the user is currently doing modreqs
         usage: /<command>
-        permission: modonduty.modduty
+        permission: moddutydutch.modduty
         permission-message: You don't have <permission>
 permissions:
-    modonduty.*:
+    moddutydutch.*:
         description: gives access to all modduty commands
         children:
             modonduty.modduty: true
-    modonduty.modduty:
+    moddutydutch.modduty:
         description: Allows use of the command /modduty
-        default: not op        
+        default: true    

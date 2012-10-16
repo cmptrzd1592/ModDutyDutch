@@ -32,9 +32,11 @@ public class ModDutyDutch extends JavaPlugin {
                 if(!isOnDuty){
                 	isOnDuty = true;
                     Bukkit.broadcastMessage(ChatColor.GREEN + sender.getName() + " is nu bezig met tickets.");
+                    return true;
                 }else if(isOnDuty){
                 	isOnDuty = false;
                         Bukkit.broadcastMessage(ChatColor.GREEN + sender.getName() + " is voor nu gestopt met het beantwoorden van tickets.");
+                        return true;
                 }
             } return true;
     }
